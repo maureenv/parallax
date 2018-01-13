@@ -1,0 +1,31 @@
+.anchor {
+  position: absolute;
+  margin-top: 200px;
+  background: green;
+  width: 100%;
+  height: 10px;
+  @include align-self(flex-start);
+}
+
+.device-container {
+  position: absolute;
+  right: 500px;
+}
+
+.device {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.device img {
+  width: 500px;
+}
+
+.device-screen {
+  background: yellow;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  //z-index: -1;
+}

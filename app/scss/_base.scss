@@ -34,3 +34,7 @@ section {
   @include align-items(center);
   @include justify-content(flex-start);
 }
+
+.section-container-half {
+  width: 50%;
+}
