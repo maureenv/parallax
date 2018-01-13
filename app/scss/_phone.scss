@@ -1,13 +1,3 @@
-.anchor,
-.anchor2 {
-  position: absolute;
-  margin-top: 200px;
-  background: green;
-  width: 100%;
-  height: 10px;
-  @include align-self(flex-start);
-}
-
 .device-container {
   position: absolute;
   right: 500px;

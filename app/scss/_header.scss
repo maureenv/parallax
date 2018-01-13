@@ -9,6 +9,8 @@ header {
   background-image: url('../images/noise.png'), -webkit-linear-gradient(left, #1a3584 0%,#aa175a 100%); /* Chrome10-25,Safari5.1-6 */
   background-image: url('../images/noise.png'), linear-gradient(to right, #1a3584 0%,#aa175a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3584', endColorstr='#aa175a',GradientType=1 ); /* IE6-9 */
+  background: url('../images/bg2.svg') no-repeat center fixed;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -18,6 +20,13 @@ header {
   justify-content: center;
   padding: 0 20px;
   position: relative;
+}
+
+.noise {
+  position: absolute;
+  background-image: url('../images/noise.png');
+  width: 100%;
+  height: 100%;
 }
 
 .intro {

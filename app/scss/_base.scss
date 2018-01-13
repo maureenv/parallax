@@ -10,7 +10,7 @@ section {
   padding: 0 20px;
   width: 100%;
   position: relative;
-  border: 1px solid black;
+  //border: 1px solid black;
   height: 100vh;
   @media screen and (min-width: 1500px) {
     max-width: 1250px;
@@ -36,5 +36,16 @@ section {
 }
 
 .section-container-half {
-  width: 50%;
+  max-width: 500px;
+  width: 100%;
+}
+
+.anchor,
+.anchor2 {
+  position: absolute;
+  margin-top: 200px;
+  // background: green;
+  // width: 100%;
+  // height: 10px;
+  @include align-self(flex-start);
 }

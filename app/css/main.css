@@ -91,7 +91,6 @@ section {
   padding: 0 20px;
   width: 100%;
   position: relative;
-  border: 1px solid black;
   height: 100vh; }
   @media screen and (min-width: 1500px) {
     .section-container {
@@ -126,7 +125,17 @@ section {
   -ms-flex-pack: flex-start; }
 
 .section-container-half {
-  width: 50%; }
+  max-width: 500px;
+  width: 100%; }
+
+.anchor,
+.anchor2 {
+  position: absolute;
+  margin-top: 200px;
+  -webkit-align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-align-self: flex-start;
+  align-self: flex-start; }
 
 body {
   height: 2000px !important; }
@@ -143,6 +152,8 @@ header {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3584', endColorstr='#aa175a',GradientType=1 );
   /* IE6-9 */
+  background: url("../images/bg2.svg") no-repeat center fixed;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -152,6 +163,12 @@ header {
   justify-content: center;
   padding: 0 20px;
   position: relative; }
+
+.noise {
+  position: absolute;
+  background-image: url("../images/noise.png");
+  width: 100%;
+  height: 100%; }
 
 .intro {
   font-weight: 700;
@@ -172,18 +189,6 @@ header {
   .intro .zero-margin-left {
     margin-left: 0;
     opacity: 1; }
-
-.anchor,
-.anchor2 {
-  position: absolute;
-  margin-top: 200px;
-  background: green;
-  width: 100%;
-  height: 10px;
-  -webkit-align-self: flex-start;
-  -moz-align-self: flex-start;
-  -ms-align-self: flex-start;
-  align-self: flex-start; }
 
 .device-container {
   position: absolute;
