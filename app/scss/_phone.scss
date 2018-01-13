@@ -1,4 +1,5 @@
-.anchor {
+.anchor,
+.anchor2 {
   position: absolute;
   margin-top: 200px;
   background: green;
@@ -22,10 +23,15 @@
   width: 500px;
 }
 
-.device-screen {
+.device-screen,
+.device-screen2 {
   background: yellow;
   width: 200px;
   height: 300px;
   position: absolute;
   //z-index: -1;
+}
+
+.device-screen2 {
+  background: red;
 }

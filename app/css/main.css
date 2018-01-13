@@ -173,7 +173,8 @@ header {
     margin-left: 0;
     opacity: 1; }
 
-.anchor {
+.anchor,
+.anchor2 {
   position: absolute;
   margin-top: 200px;
   background: green;
@@ -196,8 +197,12 @@ header {
 .device img {
   width: 500px; }
 
-.device-screen {
+.device-screen,
+.device-screen2 {
   background: yellow;
   width: 200px;
   height: 300px;
   position: absolute; }
+
+.device-screen2 {
+  background: red; }
