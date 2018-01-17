@@ -152,7 +152,7 @@ header {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3584', endColorstr='#aa175a',GradientType=1 );
   /* IE6-9 */
-  background: url("../images/bg2.svg") no-repeat center fixed;
+  background: url("../images/bg3.svg") no-repeat center fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -192,7 +192,7 @@ header {
 
 .device-container {
   position: absolute;
-  right: 500px; }
+  right: 200px; }
 
 .device {
   position: fixed;
@@ -200,7 +200,7 @@ header {
   transform: translateY(-50%); }
 
 .device img {
-  width: 500px; }
+  width: 200px; }
 
 .device-screen,
 .device-screen2 {
