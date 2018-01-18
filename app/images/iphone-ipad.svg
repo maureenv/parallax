@@ -12,7 +12,9 @@
 .ipad,
 .ipad-screen {
 	stroke-dasharray: 2000;
-	animation: dash 2.5s linear 3s forwards,
+	-webkit-animation: dash 2.5s linear 3s forwards,
+						 fadeIn 1.5s ease 4s forwards;
+	        animation: dash 2.5s linear 3s forwards,
 						 fadeIn 1.5s ease 4s forwards;
 }
 
@@ -27,6 +29,22 @@
 	}
 }
 
+@keyframes dash {
+	from {
+		stroke: #fff;
+		stroke-dashoffset: 2000;
+	}
+	to {
+		stroke: #fff;
+		stroke-dashoffset: 0;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0%{fill:rgba(0,0,0,0)}
+	100%{fill: rgba(0,0,0,0.3)}
+}
+
 @keyframes fadeIn {
 	0%{fill:rgba(0,0,0,0)}
 	100%{fill: rgba(0,0,0,0.3)}
@@ -38,13 +56,23 @@
 .ipad-top-button {
 	stroke-dasharray: 300;
 	-webkit-animation: circle 2s linear forwards;
-	-o-animation: circle 2s linear forwards;
-	-moz-animation: circle 2s linear forwards;
 	animation: circle 2s linear forwards;
-	 animation-delay: 3.5s;
+	 -webkit-animation-delay: 3.5s;
+	         animation-delay: 3.5s;
 }
 
 @-webkit-keyframes circle {
+	from {
+		stroke: #fff;
+		stroke-dashoffset: 300;
+	}
+	to {
+		stroke: #fff;
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes circle {
 	from {
 		stroke: #fff;
 		stroke-dashoffset: 300;

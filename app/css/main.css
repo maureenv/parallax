@@ -197,6 +197,11 @@ header {
 .device {
   position: fixed;
   top: 50%;
+  -webkit-transform: -webkit-translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .device-screen,
@@ -216,3 +221,13 @@ embed,
 .iphone {
   position: absolute;
   top: 0; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .anchor,
+  .anchor2 {
+    margin-top: 0; } }
+
+_:-ms-fullscreen, :root
+.anchor,
+.anchor2 {
+  margin-top: 0; }

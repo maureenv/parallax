@@ -1,0 +1,12 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     .anchor,
+     .anchor2 {
+       margin-top: 0;
+     }
+}
+
+_:-ms-fullscreen, :root
+.anchor,
+.anchor2  {
+  margin-top: 0;
+}
