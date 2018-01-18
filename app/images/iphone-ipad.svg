@@ -1,0 +1,76 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="398.096px" height="425.36px" viewBox="0 0 398.096 425.36" style="enable-background:new 0 0 398.096 425.36;"
+	 xml:space="preserve">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:none;stroke:rgba(0,0,0,0);stroke-width:1.5;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:rgba(0,0,0,0);stroke-miterlimit:10;}
+]]>
+
+.iphone,
+.iphone-screen,
+.ipad,
+.ipad-screen {
+	stroke-dasharray: 2000;
+	animation: dash 2.5s linear 3s forwards,
+						 fadeIn 1.5s ease 4s forwards;
+}
+
+@-webkit-keyframes dash {
+	from {
+		stroke: #fff;
+		stroke-dashoffset: 2000;
+	}
+	to {
+		stroke: #fff;
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fadeIn {
+	0%{fill:rgba(0,0,0,0)}
+	100%{fill: rgba(0,0,0,0.3)}
+}
+
+.iphone-bottom-button,
+.ipad-bottom-button,
+.iphone-top-button,
+.ipad-top-button {
+	stroke-dasharray: 300;
+	-webkit-animation: circle 2s linear forwards;
+	-o-animation: circle 2s linear forwards;
+	-moz-animation: circle 2s linear forwards;
+	animation: circle 2s linear forwards;
+	 animation-delay: 3.5s;
+}
+
+@-webkit-keyframes circle {
+	from {
+		stroke: #fff;
+		stroke-dashoffset: 300;
+	}
+	to {
+		stroke: #fff;
+		stroke-dashoffset: 0;
+	}
+}
+</style>
+<g>
+	<path class="st1 iphone" d="M140.02,335.981c0,11.88-9.72,21.6-21.6,21.6H21.6c-11.88,0-21.6-9.72-21.6-21.6V89.38
+		c0-11.88,9.72-21.6,21.6-21.6h96.819c11.88,0,21.6,9.72,21.6,21.6V335.981z" />
+</g>
+<rect x="6.344" y="100.114" class="st1 iphone-screen" width="127.333" height="222"/>
+<g>
+	<path class="st1 iphone-top-button" d="M85.01,84.781c0,1.467-1.62,2.667-3.6,2.667h-22.8c-1.98,0-3.6-1.2-3.6-2.667c0-1.466,1.62-2.667,3.6-2.667
+		h22.8C83.39,82.114,85.01,83.314,85.01,84.781z"/>
+</g>
+<path class="st1 ipad" d="M97.547,67.78V21.6c0-11.88,9.72-21.6,21.6-21.6h257.349c11.879,0,21.6,9.72,21.6,21.6v382.16
+	c0,11.88-9.721,21.6-21.6,21.6H119.149c-11.88,0-21.6-9.72-21.6-21.6v-46.179l-0.053-0.001c0,0,8.031,0,18.371,0
+	c0.947,0,1.914,0,2.895,0c11.696,0,21.266-9.72,21.266-21.6V89.38c0-11.88-9.57-21.6-21.267-21.6c-0.981,0-1.947,0-2.894,0
+	c-10.34,0-18.373,0-18.373,0"/>
+<path class="st1 ipad-screen" d="M115.92,357.581v29.331h263.803V36.697H115.92V67.78h-0.053c0.946,0,1.913,0,2.894,0
+	c11.697,0,21.268,9.72,21.268,21.6v246.601c0,11.88-9.57,21.6-21.266,21.6c-0.982,0-1.948,0-2.896,0"/>
+<circle class="st1 ipad-top-button" cx="247.821" cy="18.63" r="4.61"/>
+<circle class="st1 iphone-bottom-button" cx="70.01" cy="338.448" r="11.334"/>
+<circle class="st1 ipad-bottom-button" cx="247.822" cy="405.893" r="11.334"/>
+</svg>

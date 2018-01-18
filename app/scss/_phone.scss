@@ -1,16 +1,12 @@
 .device-container {
   position: absolute;
-  right: 200px;
+  right: 500px;
 }
 
 .device {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.device img {
-  width: 200px;
 }
 
 .device-screen,
@@ -24,4 +20,14 @@
 
 .device-screen2 {
   background: red;
+}
+
+embed,
+.iphone {
+  width: 400px;
+}
+
+.iphone {
+  position: absolute;
+  top: 0;
 }
