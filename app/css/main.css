@@ -206,9 +206,9 @@ header {
 
 .device-screen,
 .device-screen2 {
-  background: yellow;
-  width: 200px;
-  height: 300px;
+  width: 128px;
+  top: 100px;
+  left: 7px;
   position: absolute; }
 
 .device-screen2 {
@@ -220,7 +220,8 @@ embed,
 
 .iphone {
   position: absolute;
-  top: 0; }
+  top: 0;
+  z-index: -1; }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .anchor,
