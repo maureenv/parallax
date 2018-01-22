@@ -204,24 +204,36 @@ header {
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-.device-screen,
+.iphone-screen,
 .device-screen2 {
   width: 128px;
   top: 100px;
   left: 7px;
-  position: absolute; }
+  position: absolute;
+  z-index: 3; }
+
+.ipad-screen {
+  position: absolute;
+  width: 265px;
+  right: 19px;
+  top: 37px;
+  z-index: 2; }
 
 .device-screen2 {
   background: red; }
 
 embed,
-.iphone {
+.iphone,
+.ipad {
   width: 400px; }
 
 .iphone {
+  z-index: 2; }
+
+.iphone,
+.ipad {
   position: absolute;
-  top: 0;
-  z-index: -1; }
+  top: 0; }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .anchor,
