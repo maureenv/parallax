@@ -1,6 +1,6 @@
 .device-container {
   position: absolute;
-  right: 500px;
+  right: 400px;
 }
 
 .device {
@@ -14,8 +14,7 @@
   transform: translateY(-50%);
 }
 
-.iphone-screen,
-.device-screen2 {
+.iphone-screen {
   width: 128px;
   top: 100px;
   left: 7px;
@@ -29,10 +28,6 @@
   right: 19px;
   top: 37px;
   z-index: 2;
-}
-
-.device-screen2 {
-  background: red;
 }
 
 embed,
@@ -49,4 +44,26 @@ embed,
 .ipad {
   position: absolute;
   top: 0;
+}
+
+@media screen and (min-width: 1500px) {
+  .device-container {
+    position: absolute;
+    right: 550px;
+  }
+  embed,
+  .iphone,
+  .ipad {
+    width: 600px;
+  }
+  .iphone-screen {
+    width: 191px;
+    top: 151px;
+    left: 10px;
+  }
+  .ipad-screen {
+    width: 397px;
+    right: 28px;
+    top: 55px;
+  }
 }
