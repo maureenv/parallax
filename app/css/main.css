@@ -127,6 +127,14 @@ section {
 .section-container-half {
   max-width: 500px;
   width: 100%; }
+  .section-container-half h2, .section-container-half p {
+    color: #162c6f; }
+  @media screen and (max-width: 1000px) {
+    .section-container-half {
+      max-width: 400px; } }
+  @media screen and (max-width: 900px) {
+    .section-container-half {
+      max-width: 300px; } }
 
 .anchor,
 .anchor2 {
@@ -161,7 +169,6 @@ header {
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 0 20px;
   position: relative; }
 
 .noise {
@@ -252,7 +259,7 @@ embed,
 @media screen and (max-width: 1500px) {
   .device-container {
     position: absolute;
-    right: 520px; }
+    right: 500px; }
   embed,
   .iphone,
   .ipad {
@@ -271,6 +278,52 @@ embed,
     font-size: 35px; }
   .intro h1 {
     font-size: 70px; } }
+
+@media screen and (max-width: 1200px) {
+  .device-container {
+    position: absolute;
+    right: 400px; }
+  embed,
+  .iphone,
+  .ipad {
+    width: 400px; }
+  .iphone-screen {
+    width: 130px;
+    top: 100px;
+    left: 5px; }
+  .ipad-screen {
+    width: 266px;
+    right: 18px;
+    top: 35px; }
+  .section-container {
+    max-width: 1000px; }
+  .intro h2 {
+    font-size: 35px; }
+  .intro h1 {
+    font-size: 70px; } }
+
+@media screen and (max-width: 1100px) {
+  .device-container {
+    position: absolute;
+    right: 450px; }
+  embed,
+  .iphone,
+  .ipad {
+    width: 400px; }
+  .iphone-screen {
+    width: 130px;
+    top: 100px;
+    left: 5px; }
+  .ipad-screen {
+    width: 266px;
+    right: 18px;
+    top: 35px; }
+  .section-container {
+    max-width: 1000px; }
+  .intro h2 {
+    font-size: 30px; }
+  .intro h1 {
+    font-size: 60px; } }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .anchor,
