@@ -22,7 +22,8 @@ body, h1, h2, h3, h4, div, p {
   -moz-osx-font-smoothing: grayscale; /* for firefox font */
 }
 
-p {
+p,
+a {
   line-height: 1.4;
   font-family: $body-font;
 }

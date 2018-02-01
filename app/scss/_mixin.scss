@@ -1,3 +1,11 @@
+@mixin gradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a3584+0,aa175a+100 */
+  background: #1a3584; /* Old browsers */
+  background-image: -moz-linear-gradient(left, #1a3584 0%, #aa175a 100%); /* FF3.6-15 */
+  background-image: -webkit-linear-gradient(left, #1a3584 0%,#aa175a 100%); /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(to right, #1a3584 0%,#aa175a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a3584', endColorstr='#aa175a',GradientType=1 ); /* IE6-9 */
+}
 
 @mixin transition($attribute, $time) {
     -moz-transition: $attribute $time ease-in-out;

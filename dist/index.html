@@ -9,20 +9,90 @@
   <script src="js/main.min.js"></script>
   <title> Maureen Vogel | Web Developer/Designer </title>
 </head>
-<body>
+<body class="safari-only">
   <header>
+    <div class="noise"></div>
     <section>
-      <div class="device-container">
-        <div class="device">
-          <img src="./images/iphone.png" alt="phone">
+      <div class="section-container section--center absolute">
+        <div class="intro safari-only">
+          <h2 id="typewriter"></h2>
+          <h1> Web Developer, </h1>
+          <h1> UI/UX Designer & </h1>
+          <h1> Graphic Designer </h1>
         </div>
-      </div>
+
+        <div class="device-container">
+          <div class="device">
+
+            <div
+              data-anchor-target=".anchor"
+              data-bottom="opacity: 0"
+              data-center="opacity: 1"
+
+              data--1-top="opacity: 1"
+              data--50-top="opacity: 0">
+              <video loop muted autoplay class="iphone-screen" src="images/hungry-iphone-small.mp4"></video>
+              <video loop muted autoplay class="ipad-screen" src="images/hungry-ipad-small.mp4"></video>
+            </div>
+
+            <div
+              data-anchor-target=".anchor2"
+              data-bottom="opacity: 0"
+              data-center="opacity: 1"
+
+              data--1-top="opacity: 1"
+              data--50-top="opacity: 0">
+              <video loop muted autoplay class="ipad-screen" src="images/3advance-ipad-small.mp4"></video>
+              <video loop muted autoplay class="iphone-screen" src="images/3advance-iphone-small.mp4"></video>
+            </div>
+
+            <img src="images/iphone.png" alt="iphone" class="iphone"   data-anchor-target=".anchor"
+              data-bottom="opacity: 0"
+              data-center="opacity: 1"/>
+            <img src="images/ipad.png" alt="ipad" class="ipad"   data-anchor-target=".anchor"
+              data-bottom="opacity: 0"
+              data-center="opacity: 1"/>
+            <object>
+              <embed src="images/iphone-ipad-lines.svg"/>
+            </object>
+          </div>
+        </div>
     </section>
   </header>
-  <div class="test">
-    test test ;lkajs f
 
+  <section>
+    <div class="section-container section--center">
+      <div class="anchor"></div>
+      <div data-anchor-target=".anchor"
+      data-bottom="opacity: 0"
+      data-center="opacity: 1"
+
+      data--1-top="opacity: 1"
+      data--50-top="opacity: 0">
+      <div class="section-container-half">
+        <h2> Hungry Catering </h2>
+        <p> Hungry provides top chef-prepared office catering for hundreds of companies all around the Washington, DC area. I currently work as the front-end web developer at Hungry and built their responsive user interface with React.js, HTML5 and CSS3/SASS </p>
+      </div>
+    </div>
   </div>
+  </section>
+
+  <section>
+    <div class="section-container section--center">
+      <div class="anchor2"></div>
+      <div data-anchor-target=".anchor2"
+      data-bottom="opacity: 0"
+      data-center="opacity: 1"
+
+      data--1-top="opacity: 1"
+      data--50-top="opacity: 0">
+      <div class="section-container-half">
+        <h2> 3Advance </h2>
+        <p> 3Advance develops consumer-facing web and mobile apps, and enterprise-level database management applications. The client provided me with Photoshop files of their new website design which I coded using HTML, CSS3 and JavaScript. The site is mobile friendly wand was tested in multiple browsers</p>
+      </div>
+    </div>
+  </div>
+  </section>
 
 </body>
 </html>
