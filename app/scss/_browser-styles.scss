@@ -10,3 +10,18 @@ _:-ms-fullscreen, :root
 .anchor2  {
   margin-top: 0;
 }
+
+// safari stories
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+  .safari-only {
+    .section-container {
+      @media screen and (min-width: 1500px) {
+        max-width: 1300px;
+      }
+      @media screen and (max-width: 1500px) {
+        max-width: 1150px;
+      }
+    }
+  }
+}}
