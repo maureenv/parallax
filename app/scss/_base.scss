@@ -55,6 +55,7 @@ section {
       @include transition(all, 0.4s);
       width: 100%;
       height: 3px;
+      left: 0;
       @include gradient;
       position: absolute;
     }

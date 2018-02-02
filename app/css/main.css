@@ -146,6 +146,7 @@ section {
       transition: all 0.4s ease-in-out;
       width: 100%;
       height: 3px;
+      left: 0;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a3584+0,aa175a+100 */
       background: #1a3584;
       /* Old browsers */
@@ -242,6 +243,9 @@ header {
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%); }
+
+.device-small-screen {
+  display: none; }
 
 .iphone-screen {
   width: 128px;
@@ -355,6 +359,45 @@ embed,
     font-size: 30px; }
   .intro h1 {
     font-size: 60px; } }
+
+@media screen and (max-width: 900px) {
+  .device-container {
+    display: none; }
+  .device-small-screen {
+    display: block; }
+  .device {
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+    transform: translateY(0); }
+  .section--center {
+    text-align: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+  .section-container-half {
+    max-width: 500px; } }
+
+@media screen and (max-width: 500px) {
+  .intro h2 {
+    font-size: 25px; }
+  .intro h1 {
+    font-size: 50px; }
+  embed {
+    width: 350px; } }
+
+@media screen and (max-width: 400px) {
+  .intro h2 {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .intro h1 {
+    font-size: 40px; }
+  embed {
+    width: 300px; }
+  .section-container-half h2 {
+    font-size: 40px; } }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .anchor,
