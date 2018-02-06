@@ -1,5 +1,14 @@
 $(document).ready(function(){
-  //$('.overlayc').fadeIn(2000);
+  function checkSize() {
+    if ($(".device-small-screen").css("display") !== "block" ) {
+      var s = skrollr.init({
+            render: function(data) {
+                //Debugging - Log the current scroll position.
+                //console.log(data.curTop);
+            }
+        });
+    }
+  }
 
   // Typewriter animation
   var i = 0;
@@ -13,10 +22,7 @@ $(document).ready(function(){
     }
   }
 
-  typeWriter();
-  setTimeout(slideRight, 1700);
-
-  // Typewriter animation
+  // Animation for text slide
   var wordIndex = 0;
 
   function slideRight() {
@@ -28,6 +34,13 @@ $(document).ready(function(){
     }
   }
 
+  // run on initial page load
+  checkSize();
+  // run on window resize
+  $(window).resize(checkSize);
+
+  typeWriter();
+  setTimeout(slideRight, 1700);
 
 
 
@@ -45,12 +58,5 @@ $(document).ready(function(){
       window.location.hash = target;
     });
   });
-
-  var s = skrollr.init({
-        render: function(data) {
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
-        }
-    });
 
 });
