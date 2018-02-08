@@ -20,7 +20,7 @@ header {
   justify-content: center;
   position: relative;
   @media screen and (max-width: 500px) {
-    background: url('../images/mobile-bg.svg') no-repeat center fixed;
+    background: url('../images/mobile-bg.svg') no-repeat center;
     background-size: cover;
   }
 }

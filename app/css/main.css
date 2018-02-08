@@ -204,7 +204,7 @@ header {
   position: relative; }
   @media screen and (max-width: 500px) {
     header {
-      background: url("../images/mobile-bg.svg") no-repeat center fixed;
+      background: url("../images/mobile-bg.svg") no-repeat center;
       background-size: cover; } }
 
 .noise {
