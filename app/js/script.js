@@ -7,30 +7,37 @@ $(document).ready(function(){
                 //console.log(data.curTop);
             }
         });
+
+      // Typewriter animation
+      var i = 0;
+      var text = 'Hello, my name is Maureen and I am a';
+
+      function typeWriter() {
+        if ( i <= text.length ) {
+          document.querySelector('.intro h2').innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 30);
+        }
+      }
+
+      // Animation for text slide
+      var wordIndex = 0;
+
+      function slideRight() {
+        var words = $('.intro h1');
+        if ( wordIndex < words.length ) {
+          $('.intro h1:eq(' + wordIndex + ')').addClass('zero-margin-left');
+          wordIndex ++;
+          setTimeout(slideRight, 1000);
+        }
+      }
+
+
+      typeWriter();
+      setTimeout(slideRight, 1700);
     }
-  }
-
-  // Typewriter animation
-  var i = 0;
-  var text = 'Hello, my name is Maureen and I am a';
-
-  function typeWriter() {
-    if ( i < text.length ) {
-      document.querySelector('.intro h2').innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeWriter, 60);
-    }
-  }
-
-  // Animation for text slide
-  var wordIndex = 0;
-
-  function slideRight() {
-    var words = $('.intro h1');
-    if ( wordIndex < words.length ) {
-      $('.intro h1:eq(' + wordIndex + ')').addClass('zero-margin-left');
-      wordIndex ++;
-      setTimeout(slideRight, 1000);
+    else {
+      document.querySelector('.intro h2').innerHTML = "Hello, my name is Maureen and I am a"
     }
   }
 
@@ -38,9 +45,6 @@ $(document).ready(function(){
   checkSize();
   // run on window resize
   $(window).resize(checkSize);
-
-  typeWriter();
-  setTimeout(slideRight, 1700);
 
 
 

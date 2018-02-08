@@ -28,8 +28,10 @@ a {
   font-family: $body-font;
 }
 
-h2 {
-  font-size: $font-size-xl;
-  font-weight: $bold;
-  margin-bottom: 20px;
+.section-container-half {
+  h2 {
+    font-size: $font-size-xl;
+    font-weight: $bold;
+    margin-bottom: 20px;
+  }
 }

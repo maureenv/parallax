@@ -54,7 +54,7 @@ a {
   line-height: 1.4;
   font-family: "Lato", sans-serif; }
 
-h2 {
+.section-container-half h2 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px; }
@@ -202,6 +202,10 @@ header {
   display: flex;
   justify-content: center;
   position: relative; }
+  @media screen and (max-width: 500px) {
+    header {
+      background: url("../images/mobile-bg.svg") no-repeat center fixed;
+      background-size: cover; } }
 
 .noise {
   position: absolute;
@@ -229,6 +233,12 @@ header {
   .intro .zero-margin-left {
     margin-left: 0;
     opacity: 1; }
+  @media screen and (max-width: 500px) {
+    .intro {
+      text-shadow: none; }
+      .intro h1 {
+        margin-left: 0;
+        opacity: 1; } }
 
 .device-container {
   position: absolute;
